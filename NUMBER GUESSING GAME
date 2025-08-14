@@ -1,0 +1,15 @@
+import random
+a = random.randint(1,10)
+for i in range(3):
+        operator = int(input("Guess the number"))
+        print(operator)
+        if operator < a:
+            print("low")
+            print("TRY AGAIN")
+        elif operator > a:
+            print("high")
+            print("TRY AGAIN")
+        elif operator == a:
+            print("NICE WORK")
+            print("CONGRATULATION")
+            quit()
